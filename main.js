@@ -75,6 +75,7 @@ const calculator = {
         // }
         let result = Function("return " + equation)()
         this.outputText(result)
+        this.prevTotal = result
     },
     clearAll() {
         this.displayText = '0',
